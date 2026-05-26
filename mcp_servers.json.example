@@ -1,0 +1,23 @@
+{
+  "calendar": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@cocal/google-calendar-mcp"],
+    "env": {
+      "GOOGLE_OAUTH_CREDENTIALS": "/path/to/google-oauth-credentials.json"
+    }
+  },
+  "gmail": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"]
+  },
+  "notion": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@notionhq/notion-mcp-server"],
+    "env": {
+      "NOTION_TOKEN": "secret_your_notion_integration_token"
+    }
+  }
+}
